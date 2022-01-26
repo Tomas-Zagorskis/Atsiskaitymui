@@ -124,7 +124,7 @@ body {
 
 .intro {
   min-height: 60vw;
-  background-image: url(/src/img/bg.jpg);
+  background-image: url('../img/bg.jpg');
   background-color: #626d78;
   background-blend-mode: multiply;
   background-position: center;

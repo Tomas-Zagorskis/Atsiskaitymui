@@ -3,7 +3,9 @@ $darkgrey: #343a40;
 $yellow: #f5ba4b;
 $fontcolor: #212529;
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: inherit;
 }
 
@@ -12,7 +14,7 @@ html {
 }
 
 body {
-  font-family: 'Fira Mono', monospace;
+  font-family: "Fira Mono", monospace;
   color: $fontcolor;
   font-size: 1vw;
 }
@@ -34,9 +36,9 @@ body {
 .links {
   display: flex;
   gap: 2vw;
-  a{
-    transition: .3s ease;
-    i{
+  a {
+    transition: 0.3s ease;
+    i {
       color: $fontcolor;
     }
   }
@@ -64,7 +66,6 @@ body {
     justify-content: space-between;
     align-items: center;
     gap: 2vw;
-   
   }
   &-right {
     width: 61%;
@@ -81,7 +82,9 @@ body {
         color: $fontcolor;
         text-decoration: none;
         margin-right: 2vw;
-        i {font-size: .8vw;}
+        i {
+          font-size: 0.8vw;
+        }
       }
     }
     .purchase a {
@@ -93,7 +96,7 @@ body {
 
 .intro {
   min-height: 60vw;
-  background-image: url(/src/img/bg.jpg);
+  background-image: url(../img/bg.jpg);
   background-color: lighten($darkgrey, 20%);
   background-blend-mode: multiply;
   background-position: center;
@@ -154,13 +157,12 @@ body {
         align-items: center;
         gap: 1.5vw;
         color: lighten($fontcolor, 50%);
-        font-size: .8vw;
+        font-size: 0.8vw;
         img {
           width: 2.5vw;
           height: 2.5vw;
           border-radius: 50%;
         }
-
       }
     }
   }
@@ -169,7 +171,8 @@ body {
 .content-photo {
   text-align: center;
   margin: 5vw 0;
-  h2, p {
+  h2,
+  p {
     margin: auto;
     margin-bottom: 3vw;
     width: 50%;
@@ -183,8 +186,8 @@ body {
     gap: 1.5vw;
     margin-top: 1.5vw;
     img {
-    cursor: pointer;
-    transition: 0.2s ease-in;
+      cursor: pointer;
+      transition: 0.2s ease-in;
     }
   }
 }
@@ -192,7 +195,8 @@ body {
 .map {
   text-align: center;
   padding: 7vw 0;
-  h2, p {
+  h2,
+  p {
     margin: auto;
     margin-bottom: 3vw;
     width: 50%;
@@ -200,13 +204,13 @@ body {
   iframe {
     height: 25vw;
     width: 100%;
-    border: none
+    border: none;
   }
 }
 
 .footer {
   background-color: $darkgrey;
-  color: darken($lightgrey,25%);
+  color: darken($lightgrey, 25%);
   padding: 5vw 0;
   .container {
     .footer-top {
@@ -234,7 +238,7 @@ body {
         display: flex;
         justify-content: right;
         margin-top: 2vw;
-        a i{
+        a i {
           color: $yellow;
         }
       }
@@ -276,7 +280,7 @@ nav ul li:hover,
     }
   }
   .btn {
-    font-size: .8rem;
+    font-size: 0.8rem;
     padding: 1rem;
     margin: 2rem 0;
   }
@@ -318,7 +322,7 @@ nav ul li:hover,
         }
         .person {
           margin-top: 2rem;
-          font-size: .8rem;
+          font-size: 0.8rem;
           img {
             width: 2rem;
             height: 2rem;
@@ -329,11 +333,12 @@ nav ul li:hover,
   }
   .content-photo {
     margin: 4rem 0;
-    h2, p {
+    h2,
+    p {
       width: 100%;
       margin: 2rem 0;
     }
-    .four-photo{
+    .four-photo {
       grid-template-columns: 1fr 1fr;
       gap: 1rem;
     }
@@ -343,7 +348,8 @@ nav ul li:hover,
     }
   }
   .map {
-    h2, p {
+    h2,
+    p {
       width: 100%;
       margin: 3rem 0;
     }
@@ -352,9 +358,9 @@ nav ul li:hover,
     }
   }
   .footer .container {
-    font-size: .7rem;
+    font-size: 0.7rem;
     text-align: left;
-    .footer-top{
+    .footer-top {
       flex-direction: column;
       &-nav ul {
         column-gap: 2rem;
